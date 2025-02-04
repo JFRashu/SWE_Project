@@ -49,14 +49,14 @@ const Login = () => {
                     <label className="block text-sm font-medium text-white">
                       Username
                     </label>
-                    <div className="relative group">
+                    <div className="relative group ">
                       <div className="absolute inset-y-0 left-3 flex items-center pl-3">
                         <User className="h-5 w-5  text-white group-focus-within:text-blue-500 transition-colors" />
                       </div>
-                      <div className="relative group w-full">
+                      <div className="relative group w-full ">
                         <input
                           type="text"
-                          placeholder="johndoe"
+                          placeholder="  johndoe"
                           className="w-full box-border pl-10 pr-4 py-3 border border-gray-200 rounded-xl bg-white/50 focus:bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                           value={username}
                           onChange={(e) => setUsername(e.target.value)}
@@ -78,7 +78,7 @@ const Login = () => {
                       <div className="relative group w-full">
                         <input
                           type={showPassword ? 'text' : 'password'} // Toggle password visibility based on state
-                          placeholder="••••••••"
+                          placeholder="  ••••••••"
                           className="w-full box-border pl-10 pr-4 py-3 border border-gray-200 rounded-xl bg-white/50 focus:bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                           value={password}
                           onChange={(e) => setPassword(e.target.value)}
@@ -99,33 +99,20 @@ const Login = () => {
                   </div>
 
 
-                  {/* Remember Me & Forgot Password
-                <div className="flex items-center justify-between">
-                  <label className="flex items-center">
-                    <input
-                      type="checkbox"
-                      className="h-4 w-4 rounded border-gray-300 text-blue-500 focus:ring-blue-500 transition-colors"
-                    />
-                    <span className="ml-2 text-sm text-gray-600">Remember me</span>
-                  </label>
-                  <a href="#" className="text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors">
-                    Forgot password?
-                  </a>
-                </div> */}
 
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-xl flex items-center justify-center gap-2 font-medium shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all cursor-pointer"
+                    className="w-full ml-0 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-xl flex items-center justify-center gap-2 font-medium shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all cursor-pointer"
                   >
                     Sign in
                     <ArrowRight className="h-5 w-5" />
                   </button>
 
                   {/* Sign up link */}
-                  <div className="text-center text-sm text-gray-600">
-                    Don't have an account?{' '}
-                    <a onClick={() => navigate('/registration')} className="font-medium text-blue-500  hover:text-blue-600 transition-colors cursor-pointer">
+                  <div className="text-center text-sm text-gray-400">
+                    Don't have an account ?{' '}
+                    <a onClick={() => navigate('/registration')} className="font-medium text-blue-500  hover:text-blue-100 transition-colors cursor-pointer">
                       Create an account
                     </a>
                   </div>

@@ -17,7 +17,7 @@ const TaskList = ({
     };
 
     return (
-        <div className="divide-y ">
+        <div className="divide-y border-none">
             {tasks.map((task) => (
                 <div
                     key={task.id}

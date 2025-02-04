@@ -63,14 +63,14 @@ const Registration = () => {
                     <label className="block text-sm font-medium text-white">
                       Username
                     </label>
-                    <div className="relative group">
-                      <div className="absolute inset-y-0 left-3 flex items-center pl-3">
+                    <div className="relative group ">
+                      <div className="absolute inset-y-0 left-3 flex items-center pl-3 m-2">
                         <User className="h-5 w-5 text-white group-focus-within:text-blue-500 transition-colors" />
                       </div>
                       <div className="relative group w-full">
                         <input
                           type="text"
-                          placeholder="johndoe"
+                          placeholder="   johndoe"
                           className="w-full  box-border pl-10 pr-4 py-3 border border-gray-200 rounded-xl bg-white/50 focus:bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                           value={username}
                           onChange={(e) => setUsername(e.target.value)}
@@ -93,7 +93,7 @@ const Registration = () => {
                       <div className="relative group w-full">
                         <input
                           type="email"
-                          placeholder="you@example.com"
+                          placeholder="  you@example.com"
                           className="w-full box-border pl-10 pr-4 py-3 border border-gray-200 rounded-xl bg-white/50 focus:bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
@@ -115,7 +115,7 @@ const Registration = () => {
                       <div className="relative group w-full">
                         <input
                           type={showPassword ? 'text' : 'password'} // Toggle password visibility based on state
-                          placeholder="••••••••"
+                          placeholder="  ••••••••"
                           className="w-full box-border pl-10 pr-4 py-3 border border-gray-200 rounded-xl bg-white/50 focus:bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                           value={password}
                           onChange={(e) => setPassword(e.target.value)}
@@ -146,7 +146,7 @@ const Registration = () => {
                       <div className="relative group w-full">
                         <input
                           type={showConPassword ? 'text' : 'password'} // Toggle password visibility based on state
-                          placeholder="••••••••"
+                          placeholder="  ••••••••"
                           className="w-full box-border pl-10 pr-4 py-3 border border-gray-200 rounded-xl bg-white/50 focus:bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                           value={confirmPassword}
                           onChange={(e) => setConfirmPassword(e.target.value)}
@@ -168,18 +168,18 @@ const Registration = () => {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="cursor-pointer w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-xl flex items-center justify-center gap-2 font-medium shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all"
+                    className="ml-0 cursor-pointer w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-xl flex items-center justify-center gap-2 font-medium shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all"
                   >
                     Create Account
                     <ArrowRight className="h-5 w-5" />
                   </button>
 
                   {/* Sign in link */}
-                  <div className="text-center text-sm text-gray-600">
+                  <div className="text-center text-sm text-gray-400">
                     Already have an account?{' '}
                     <button
                       onClick={() => navigate('/login')}
-                      className="font-medium text-blue-500 hover:text-blue-600 transition-colors"
+                      className="font-medium rounded-md bg-blue-500 text-blue-100 hover:text-blue-600 hover:bg-blue-100 transition-colors"
                     >
                       Sign in
                     </button>

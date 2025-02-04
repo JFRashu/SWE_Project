@@ -26,7 +26,7 @@ const ChatHeader = ({
     };
 
     return (
-        <div className="p-4 bg-gray-800 border-b border-gray-200 shadow-sm relative">
+        <div className="p-4 bg-gray-800  shadow-sm relative">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                     
@@ -40,7 +40,7 @@ const ChatHeader = ({
                 </div>
                 <button
                     onClick={() => setShowAttachments(!showAttachments)}
-                    className=" flex items-center gap-2 px-4 py-2 text-blue-500 font-medium rounded-lg hover:bg-blue-50 transition-colors"
+                    className=" flex items-center gap-2 px-4 py-2 text-blue-100 font-medium rounded-lg hover:bg-blue-50 hover:text-blue-500 transition-colors"
                 >
                     <Paperclip className="w-4 h-4" />
                     Attachments
