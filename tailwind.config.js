@@ -10,7 +10,7 @@
 //     // "./src/**/*.{js,jsx,ts,tsx}",
 
 //   ],
-//   prefix: 'tw-',
+//   prefix: '',
 //   theme: {
 //     extend: {
 //       colors: {
@@ -53,7 +53,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"  // Corrected path
   ],
   
-  //prefix: 'tw-',
+  //prefix: '',
   theme: {
     extend: {
       colors: {
